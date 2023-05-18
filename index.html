@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/changes.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <style>
+        .bg-body{
+            background: rgb(78,83,117);
+            background: linear-gradient(0deg, rgba(78,83,117,1) 0%, rgba(31,31,31,1) 100%); 
+        }
+
+        .bg-interior{
+            background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), url("img/interior.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position-y: center;
+        }
+
+        .bg-carp{
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img/carpinteria.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position-y: center;
+        }
+
+        .bg-font{
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img/fontaneria2.webp");
+            background-size: cover;
+            background-position-y: center;
+        }
+
+        .bg-elect{
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img/electricidad.jpg");
+            background-size: cover;
+            background-position-y: center;
+        }
+
+        .bg-acabados{
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img/acabados.jpg");
+            background-size: cover;
+            background-position-y: center;
+        }
+
+        .nav-l-hover:hover{
+            background-color: rgb(255, 255, 255);
+        }
+
+        .orange:hover{
+            background-color: #e24930;
+            color: #fff;
+        }
+
+        .dec{
+            text-decoration: solid underline #e24930 4px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container-fluid bg-body p-0">
+        <div class="container-md">
+            <!-- Navbar -->
+            <nav class="navbar navbar-expand-lg navbar-dark bg-none">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#">
+                    <img src="img/log2.png" alt="Logo" width="50" class="d-inline-block align-text-top">
+                  </a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="">Inicio</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#cards">Productos</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contacto</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+            </nav>          
+        </div>
+    
+        <div class="container-lg">
+            
+            <!-- header -->
+            <div class="row mb-5">
+                <div class="col col-md-12">
+                    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner rounded">
+                          <div class="carousel-item active">
+                            <div class="d-flex bg-carp justify-content-center align-items-center" style="height: 500px;">
+                                <h6 class="fs-1 text-white">Carpinteria</h6>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <div class="d-flex bg-font justify-content-center align-items-center" style="height: 500px;">
+                                <h6 class="fs-1 text-white">Fontaneria</h6>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <div class="d-flex bg-elect justify-content-center align-items-center" style="height: 500px;">
+                                <h6 class="fs-1 text-white">Electricidad</h6>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <div class="d-flex bg-acabados justify-content-center align-items-center" style="height: 500px;">
+                                <h6 class="fs-1 text-white">Acabados</h6>
+                            </div>
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                </div>
+            </div>
+
+            <!-- cards navs-->
+            <div class="row mb-5" id="cards">
+                <div class="col-md-3 d-flex align-items-center justify-content-center pb-4">
+                    <a href="#carp" class="w-100"><button type="link" class="btn btn-outline-light orange">
+                        <i class="bi bi-hammer fs-1"></i><br> 
+                        <span class="fs-4">Carpinteria</span>
+                    </button></a>
+                </div>
+                <div class="col-md-3 d-flex align-items-center justify-content-center pb-4">
+                    <a href="#font" class="w-100"><button type="button" class="btn btn-outline-light orange">
+                        <i class="bi bi-tools fs-1"></i></i><br> 
+                        <span class="fs-4">Fontaneria</span>
+                    </button></a>
+                </div>
+                <div class="col-md-3 d-flex align-items-center justify-content-center pb-4">
+                    <a href="#elect" class="w-100"><button type="button" class="btn btn-outline-light orange">
+                        <i class="bi bi-lightbulb fs-1"></i></i><br> 
+                        <span class="fs-4">Electricidad</span>
+                    </button></a>
+                </div>
+                <div class="col-md-3 d-flex align-items-center justify-content-center pb-4">
+                    <a href="#acab" class="w-100"><button type="button" class="btn btn-outline-light orange">
+                        <i class="bi bi-paint-bucket fs-1"></i></i><br> 
+                        <span class="fs-4">Acabados</span>
+                    </button></a>
+                </div>
+                       
+            </div>
+    
+        </div>
+
+        <!-- Sections -->
+        <div class="container-fluid text-white">
+        
+            <div class="row d-flex justify-content-center text-white p-5" id="carp">
+                <div class="col-md-5 d-flex align-items-center justify-content-center">
+                    <h5 class="fs-1 text-center dec">Carpinteria</h5>
+                </div>
+                <div class="col-md-5 d-flex align-items-center justify-content-center">
+                    <div class="text-sec">
+                        <p>
+                            En <b>A-S-A Carpintería nos dedicamos a:</b> <br>
+                            <ul>
+                                <li>Diseño y fabricación de muebles personalizados.</li>
+                                <li>Instalación de puertas y ventanas de madera.</li>
+                                <li>Instalación de pisos de madera.</li>
+                                <li>Diseño y construcción de escaleras de madera.</li>
+                                <li>Restauración de muebles antiguos.</li>
+                                <li>Instalación de molduras y zócalos de madera.</li>
+                                <li>Construcción de pérgolas, terrazas y cubiertas de madera.</li>
+                                <li>Diseño y construcción de armarios y closets.</li>
+                                <li>Fabricación e instalación de barandas y pasamanos.</li>
+                                <li>Reparación y mantenimiento de estructuras de madera.</li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row d-flex justify-content-center text-white p-5" id="font" style="flex-direction: row-reverse;">
+                <div class="col-md-5 d-flex align-items-center justify-content-center">
+                    <h5 class="fs-1 text-center dec">Fontaneria</h5>
+                </div>
+
+                <div class="col-md-5 d-flex align-items-center justify-content-center">
+                    <div class="text-sec">
+                        <p>
+                            En la parte de <b>Fontanería</b> te podemos ofrecer: <br>
+                            <ul>
+                                <li>Instalación y reparación de tuberías de agua y desagüe.</li>
+                                <li>Instalación y reparación de sistemas de drenaje y alcantarillado.</li>
+                                <li>Instalación y reparación de grifos, llaves de paso y válvulas de control.</li>
+                                <li>Instalación y reparación de calentadores de agua.</li>
+                                <li>Instalación y reparación de sistemas de agua caliente y calefacción.</li>
+                                <li>Instalación y reparación de sistemas de riego y drenaje para jardines y áreas verdes.</li>
+                                <li>Instalación y reparación de bombas de agua y sistemas de presión.</li>
+                                <li>Limpieza y desinfección de tanques de agua potable.</li>
+                                <li>Localización y reparación de fugas de agua y gas.</li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row d-flex justify-content-center text-white p-5" id="elect">
+                <div class="col-md-5 d-flex align-items-center justify-content-center">
+                    <h5 class="fs-1 text-center dec">Electricidad</h5>
+    
+                </div>
+                <div class="col-md-5 d-flex align-items-center justify-content-center">
+                    <div class="text-sec">
+                        <p>
+                            Nuestra area de <b>Electricidad</b> está capacitada en: <br>
+                            <ul>
+                                <li>Instalación y reparación de sistemas de iluminación interior y exterior.</li>
+                                <li>Instalación y reparación de enchufes, interruptores y tomas de corriente.</li>
+                                <li>Instalación y reparación de sistemas de cableado eléctrico.</li>
+                                <li>Instalación y reparación de sistemas de seguridad y cámaras de vigilancia.</li>
+                                <li>Instalación y reparación de sistemas de sonido y entretenimiento en el hogar.</li>
+                                <li>Instalación y reparación de sistemas de climatización y ventilación.</li>
+                                <li>Instalación y reparación de sistemas de energía solar y eólica.</li>
+                                <li>Asesoramiento en el diseño de sistemas de electricidad para proyectos de construcción.</li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="container-fluid bg-interior" id="acab">
+            <!-- Images-->
+            <h5 class="fs-1 text-center text-white pt-5 dec">Acabados</h5>
+            <div class="row justify-content-center p-5">
+                <div class="col-9 text-center">
+                    <div class="p-1">
+                        <div class="text-grow" id="button">
+                            <a href="#" class="btn btn-blue btn-bg-ocean" style="padding-block: 100px;"><p>Pinturas</p></a>
+                        </div>
+                    </div>
+                    <div class="p-1">
+                        <div class="text-grow" id="button">
+                            <a href="#" class="btn btn-blue btn-bg-desert " style="padding-block: 100px;"><p>Estucado</p></a>
+                        </div>
+                    </div>
+                    <div class="p-1">
+                        <div class="text-grow" id="button">
+                            <a href="#" class="btn btn-blue btn-bg-arctic" style="padding-block: 100px;"><p>Pisos</p></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- CONTACT -->
+        <section class="bg-light py-1" id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-9 py-5">
+                        <div class="contact-form">
+                            <h3>Contáctanos</h3>
+                            <p>Deja aquí tu información y nosotros nos pondrémos en contacto contigo.</p>
+                        </div>
+
+                        <form action="" >
+                            <div class="input-group mb-3">
+                                <span class="input-group-text" style="background-color: #34495E; color:white;"><i class="bi bi-person-fill"></i></span>
+                                <input type="text" class="form-control" placeholder="Nombre" aria-label="Username" aria-describedby="basic-addon1">
+                            </div>
+
+                            <div class="input-group mb-3">
+                                <span class="input-group-text"><i class="bi bi-envelope-fill"></i></i></span>
+                                <input type="text" class="form-control" placeholder="E-Mail" aria-label="Username" aria-describedby="basic-addon1">
+                            </div>
+
+                            <div class="input-group mb-3">
+                                <span class="input-group-text"><i class="bi bi-pen-fill"></i></i></span>
+                                <textarea placeholder="¿Qué deseas?" cols="30" rows="5" style="resize: none;" class="form-control" aria-label="With textarea"></textarea>
+                            </div>
+
+                            <div class="d-flex justify-content-center ">
+                                <button class="btn btn-dark btn-lg" id="submit" type="submit">
+                                    Send Message!
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-lg-3 d-flex justify-content-center align-items-center">
+                        <div class="d-flex justify-content-center align-items-center">
+                            <img src="img/log2.png" alt="ASA" width="200">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <hr>
+
+    <div class="container-md">
+        <h5 class="fs-2 text-center mt-4">Sobre Nosotros</h5>
+        <div class="row d-flex justify-content-center align-items-center">
+            <div class="col-md-6">
+                <p class="text-center pb-4">En A-S-A Servicios de Hogar somos una empresa de construcción en Colombia que ofrece servicios especializados en carpintería, acabados, fontanería y electricidad. Contamos con más de [número] años de experiencia y un equipo de profesionales altamente capacitados y especializados en cada área de trabajo, lo que nos permite ofrecer soluciones integrales y adaptadas a las necesidades de cada proyecto. Además, nos preocupamos por la sostenibilidad y el cuidado del medio ambiente, implementando prácticas y materiales eco-amigables en cada proyecto en el que trabajamos.</p>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="bg-dark">
+        <div class="container p-1 align-items-center text-center text-white">
+            <p>Copyright &copy; A-S-A Corp.</p>
+        </div>
+    </footer>
+
+    
+
+    <script src="js/bootstrap.js"></script>
+</body>
+</html>
